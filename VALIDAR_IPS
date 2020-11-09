@@ -1,0 +1,8 @@
+f = open("C:\\Users\\raulm\\OneDrive\\Desktop\\Python\ips.txt", "r")
+array_ips=list(f)
+for i in array_ips:
+    octeto=i.split(".")
+    if int(octeto[2]) and int(octeto[3])<100:
+        print("Valido ==>",i)
+    else:
+        print("No Valido ==>",i)
